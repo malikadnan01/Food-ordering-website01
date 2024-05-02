@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images\yummylogo.jpg" height="80px" width="200px" style="border-radius: 50%;"></i></a>
+        
+        <div id="menu-bar" class="fas fa-bars"> </div>
+        
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#speciality">speciality</a>
+            <a href="index.html#popular">popular</a>
+            <a href="index.html#gallery">gallery</a>
+            <a href="index.html#review">review</a>
+            <a href="index.html#order">Order
+                <span id="cart">0</span>
+            </a>
+        </nav>
+    </header>
+
+    <div class="PIZZA">
+        <!-- <h1 class="heading" style="margin-top: 50px;">OUR<span> MENU </span></h1> -->
+     <section class="popular" id="popular" style="margin-top: 100px;">
+        <h1 class="heading">PIZZA</h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="price">Price : Rs 199</span>
+                <img src="images\Margherita.jpg" alt="">
+                <h3>Margherita Pizza</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">order now</a>  
+            </div>
+
+            <div class="box">
+                <span class="price">Price : Rs 299 </span>
+                <img src="images\veggie-supreme.jpg" alt="">
+                <h3>Veggie Supreme</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">order now</a> 
+                
+            </div> 
+
+            <div class="box">
+                <span class="price">Price : Rs 289 </span>
+                <img src="images\tandoori-paneer-corn.jpg" alt="">
+                <h3>Paneer & Corn</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">order now</a> 
+                
+            </div>
+
+            <div class="box">
+                <span class="price">Price : Rs 200 </span>
+                <img src="images\mexican-fiesta.jpg" alt="">
+                <h3>Mexican Fiesta</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">order now</a>
+            </div>
+            
+            <div class="box">
+                <span class="price">Price : Rs 215</span>
+                <img src="images\mazedar-makhni-paneer.jpg" alt="">
+                <h3>Makhni Paneer</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">order now</a> 
+                
+            </div>
+            
+            
+            
+            <div class="box">
+                <span class="price">Price : Rs 235 </span>
+                <img src="images\tandoori-paneer.jpg" alt="">
+                <h3>Tandoori Paneer</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">order now</a> 
+                
+            </div>
+
+            <div class="box">
+                <span class="price">Price : Rs 159 </span>
+                <img src="images\Schezwan.jpg" alt="">
+                <h3>Schezwan Pizza</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">order now</a> 
+                
+            </div>
+
+            <div class="box">
+                <span class="price">Price : Rs 350 </span>
+                <img src="images\Farmhouse.jpg" alt="">
+                <h3>Farmhouse Pizza</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">order now</a> 
+                
+            </div>
+            
+        </div>
+        Made by charu gupta
+    </section>
+    
+
+    <script>
+        const cart = document.getElementById("cart");
+        document.querySelectorAll(".btn").forEach(function(btn) {
+            btn.onclick = function() {
+                const item = cart.innerText;
+                cart.innerText = parseInt(item, 10) + 1;
+            };
+        });
+    </script>
+</body>
+</html>

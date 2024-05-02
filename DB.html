@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images\yummylogo.jpg" height="80px" width="200px" style="border-radius: 50%;"></i></a>
+        
+        <div id="menu-bar" class="fas fa-bars"> </div>
+        
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#speciality">Speciality</a>
+            <a href="index.html#popular">Popular</a>
+            <a href="index.html#gallery">Gallery</a>
+            <a href="index.html#review">Review</a>
+            <a href="index.html#order">Order
+                <span id="cart">0</span>
+            </a>
+        </nav>
+    </header>
+
+    <section class="popular" id="popular" style="margin-top: 100px;">
+        <h1 class="heading">Dessert & Beverages </h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="price">Price : Rs 130</span>
+                <img src="images\brownie_shake.webp" alt="">
+                <h3>Brownie Shake</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">order now</a>  
+            </div>
+            
+            <div class="box">
+                <span class="price">Price : Rs 99</span>
+                <img src="images\chocolate-milkshake.jpg" alt="">
+                <h3>Chocolate Shake</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">order now</a> 
+                
+            </div>
+            
+            <div class="box">
+                <span class="price">Price : Rs 110 </span>
+                <img src="images\Kitkat shake.jpg" alt="">
+                <h3>Kitkat Shake</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">order now</a> 
+                
+            </div>
+            
+            <div class="box">
+                <span class="price">Price : Rs 130 </span>
+                <img src="images\oreo-shake.jpg" alt="">
+                <h3>Oreo Shake</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">order now</a> 
+                
+            </div>
+
+            <div class="box">
+                <span class="price">Price : Rs 30 </span>
+                <img src="images\Gulab-jamun.jpg" alt="">
+                <h3>Gulab Jamun</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">order now</a> 
+                
+            </div>
+
+            <div class="box">
+                <span class="price">Price : Rs 79 </span>
+                <img src="images\Rasgulla.png" alt="">
+                <h3>Rasgulla</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">order now</a> 
+                
+            </div>
+
+            <div class="box">
+                <span class="price">Price : Rs 99 </span>
+                <img src="images\rasmalai.webp" alt="">
+                <h3>Rasmalai</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">order now</a> 
+                
+            </div>
+        </div>
+    </section>
+    <script>
+        const cart = document.getElementById("cart");
+        document.querySelectorAll(".btn").forEach(function(btn) {
+            btn.onclick = function() {
+                const item = cart.innerText;
+                cart.innerText = parseInt(item, 10) + 1;
+            };
+        });
+    </script>
+</body>
+</html>

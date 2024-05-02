@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images\yummylogo.jpg" height="80px" width="200px" style="border-radius: 50%;"></i></a>
+        
+        <div id="menu-bar" class="fas fa-bars"> </div>
+        
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#speciality">Speciality</a>
+            <a href="index.html#popular">Popular</a>
+            <a href="index.html#gallery">Gallery</a>
+            <a href="index.html#review">Review</a>
+            <a href="index.html#order">Order
+                <span id="cart">0</span>
+            </a>
+        </nav>
+    </header>
+
+    <section class="popular" id="popular" style="margin-top: 100px;">
+        <h1 class="heading">Momos </h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="price">Price : Rs 150</span>
+                <img src="images\garlic-paneer.jpg" alt="">
+                <h3>Garlic Paneer</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">Add-To-Cart</a>  
+            </div>
+            
+            <div class="box">
+                <span class="price">Price : Rs 120</span>
+                <img src="images\kadai-paneer.webp" alt="">
+                <h3>Kadai Paneer</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">Add-To-Cart</a> 
+                
+            </div>
+            
+            <div class="box">
+                <span class="price">Price : Rs 159 </span>
+                <img src="images\paneer-bhurji.jpg" alt="">
+                <h3>Paneer Burjii</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">Add-To-Cart</a> 
+                
+            </div>
+            
+            <div class="box">
+                <span class="price">Price : Rs 170 </span>
+                <img src="images\Paneer-Butter-Masala.jpg" alt="">
+                <h3>Paneer Butter Masala</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">Add-To-Cart</a> 
+                
+            </div>
+
+            <div class="box">
+                <span class="price">Price : Rs 230 </span>
+                <img src="images\Shahi-paneer.jpg" alt="">
+                <h3>Shahi Paneer</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">Add-To-Cart</a> 
+                
+            </div>
+
+            <div class="box">
+                <span class="price">Price : Rs 159 </span>
+                <img src="images\paneer-curry.jpg" alt="">
+                <h3>Paneer Cury</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">Add-To-Cart</a> 
+                
+            </div>
+
+            <div class="box">
+                <span class="price">Price : Rs 120 </span>
+                <img src="images\Palak-paneer.jpg" alt="">
+                <h3>Palak Paneer</h3>
+                <div class="star">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <a href="#" class="btn">Add-To-Cart</a> 
+                
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        const cart = document.getElementById("cart");
+        document.querySelectorAll(".btn").forEach(function(btn) {
+            btn.onclick = function() {
+                const item = cart.innerText;
+                cart.innerText = parseInt(item, 10) + 1;
+            };
+        });
+    </script>
+</body>
+</html>
